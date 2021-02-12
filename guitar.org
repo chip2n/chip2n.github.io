@@ -1,3 +1,5 @@
+# -*- org-html-validation-link: nil; -*-
+
 #+SETUPFILE: theme.org
 
 * Introduction
