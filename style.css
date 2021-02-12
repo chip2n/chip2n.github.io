@@ -17,7 +17,7 @@ div#content {
     margin: 64px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   div#content {
     margin: 8px;
   }
