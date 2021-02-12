@@ -115,6 +115,6 @@ especially good if the _top note_ of the triad is part of the melody.
 
 Note that the ~Emaj~ triad contains a note that does not exist in the
 natural minor scale. This note lies _just below the root note_ of the ~i~
-chord (the _tonic_). This note, also called the _leading tone_ is special,
+chord (the _tonic_). This note, also called the _leading tone_, is special
 since it has a strong "pull" towards the tonic. The main purpose of
 the ~V~ chord (~Emaj~ in this case) is to resolve back "home".
