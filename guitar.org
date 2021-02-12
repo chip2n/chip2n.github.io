@@ -1,6 +1,7 @@
 # -*- org-html-validation-link: nil; -*-
 
 #+SETUPFILE: theme.org
+#+EXPORT_FILE_NAME: index.html
 
 * Introduction
 #+begin_src lisp :results silent :exports none
