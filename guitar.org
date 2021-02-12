@@ -2,6 +2,7 @@
 
 #+SETUPFILE: theme.org
 #+EXPORT_FILE_NAME: index.html
+#+TITLE: Guitar Improvisation
 
 * Introduction
 #+begin_src lisp :results silent :exports none
