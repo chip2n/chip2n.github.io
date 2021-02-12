@@ -1,0 +1,26 @@
+body {
+    max-width: 1000px;
+    margin: auto;
+    font-family: Georgia, serif;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+    word-wrap: break-word;
+    hyphens: auto;
+    font-kerning: normal;
+    color: #1a1a1a;
+    padding: 1em;
+    font-size: 20px;
+}
+
+div#content {
+    margin: 64px;
+}
+
+code {
+    color: #d45959;
+    font-weight: bold;
+}
+
+h2 {
+    margin-top: 1.4em;
+}

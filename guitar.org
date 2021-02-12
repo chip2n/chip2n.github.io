@@ -1,0 +1,116 @@
+#+SETUPFILE: theme.org
+
+* Introduction
+#+begin_src lisp :results silent :exports none
+(defun img (name)
+  (format nil "<img src=\"img/~a.svg\" />" name))
+
+(defun img-small (name)
+  (format t "<center><img src=\"img/~a.svg\" width=300 /></center>" name))
+
+(defun row (&rest paths)
+  (format t "
+<table style=\"width:100%\">
+  <tr>
+    ~{<td>~a</td>~}
+  </tr>
+</table>" paths))
+#+end_src
+
+This document describes a framework for guitar improvisation, using
+the ~i-iv-V~ chord progression (derived from the minor scale) as an
+example. All examples are in the key of ~A~, so the chords are ~Amin~ ->
+~Dmin~ -> ~Emaj~.
+
+* Open chords
+An open chord is a chord that is played with one or more open
+strings. Here's the most common ways of playing ~Amin~, ~Dmin~ and ~Emaj~:
+
+#+begin_src lisp :exports results :results output html
+(row
+ (img "Amin-chord")
+ (img "Dmin-chord")
+ (img "Emaj-chord"))
+#+end_src
+
+Note that the bottom strings are not always played. This is because
+we want to play the _root note_ at the bottom of the chord (this is not
+100% required, but it's the most basic version of the chord).
+
+* Arpeggios
+An _arpeggio_ is a chord played sequentially in an ascending/descending
+order. These are very useful when improvising, because they contain
+notes that are consonant with the chord they're played over. 
+
+#+begin_src lisp :exports results :results output html
+(row
+ (img "Amin-Arpeggio")
+ (img "Dmin-Arpeggio")
+ (img "Emaj-Arpeggio"))
+#+end_src
+
+The red dots correspond to the _root note_ of the chord (e.g. ~D~ for the
+~Dmin~ chord).
+
+_Note the fret numbers_.
+
+Try playing these one after another at a set tempo (with a
+metronome). After you can play them ascending/descending, try mixing
+it up and come up with some melodies over the ~i-iv-V~ progression.
+
+** TODO Fix images                                                   :noexport:
+
+* Pentatonic scale
+Playing arpeggios over chords sound good, but it's not very
+interesting. Let's add some notes from the _pentatonic scale_. To start,
+we'll only explore the pentatonic scale built on top of the ~Amin~
+chord.
+
+#+begin_src lisp :exports results :results output html
+(img-small "Amin-Pentatonic")
+#+end_src
+
+When improvising, focus on the notes from the arpeggio of the current
+chord and sprinkle some notes from the ~Amin~ pentatonic scale when you want
+to spice things up.
+
+* Natural minor scale
+Let's add another layer of notes to the pentatonic scale.
+
+#+begin_src lisp :exports results :results output html
+(img-small "Amin-Natural Minor")
+#+end_src
+
+The blue notes are the additional notes added. These notes form the
+_natural minor scale_. When playing notes outside the arpeggio and
+pentatonic scale, try not to linger on them too long. A good way is to
+using them as _passing notes_, for example between two chord tones (from
+the arpeggio).
+
+* Triads
+A triad is a chord consisting of three notes - the root, the third and
+the fifth. There are many places to play triads on the guitar neck -
+we're going to focus on a set of triads that lies on strings 2, 3
+and 4. These are shown on top of the A natural minor scale (grey
+dots).
+
+#+begin_src lisp :exports results :results output html
+(row
+ (img "Amin-Triad")
+ (img "Dmin-Triad")
+ (img "Emaj-Triad"))
+#+end_src
+
+These three are nice, because with them you can play the whole ~i-iv-V~ chord
+progression with minimal note movement. This means that they naturally
+_voice lead_ into eachother.
+
+When you want to add some harmony behind your playing, you can
+interleave these triads between your melody notes. This works
+especially good if the _top note_ of the triad is part of the melody.
+
+Note that the ~Emaj~ triad contains a note that does not exist in the
+natural minor scale. This note lies _just below the root note_ of the ~i~
+chord (the _tonic_). This note, also called the _leading tone_ is special,
+since it has a strong "pull" towards the tonic. The main purpose of
+the ~V~ chord (~Emaj~ in this case) is to resolve back "home".
