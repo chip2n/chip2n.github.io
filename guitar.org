@@ -107,7 +107,7 @@ dots).
 
 These three are nice, because with them you can play the whole ~i-iv-V~ chord
 progression with minimal note movement. This means that they naturally
-_voice lead_ into eachother.
+_voice lead_ into each other.
 
 When you want to add some harmony behind your playing, you can
 interleave these triads between your melody notes. This works
