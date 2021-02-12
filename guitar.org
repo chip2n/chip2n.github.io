@@ -23,8 +23,8 @@
 
 This document describes a framework for guitar improvisation, using
 the ~i-iv-V~ chord progression (derived from the minor scale) as an
-example. All examples are in the key of ~A~, so the chords are ~Amin~ ->
-~Dmin~ -> ~Emaj~.
+example. All examples are in the key of ~A~, so the chords are ~Amin~ →
+~Dmin~ → ~Emaj~.
 
 * Open chords
 An open chord is a chord that is played with one or more open
