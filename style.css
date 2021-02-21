@@ -1,7 +1,8 @@
 body {
     max-width: 1000px;
     margin: auto;
-    color: #1a1a1a;
+    color: #3D372F;
+    background: #F9F5ED;
     font-size: 20px;
     font-family: Georgia, serif;
     font-kerning: normal;
@@ -23,7 +24,7 @@ div#content {
 }
 
 code {
-    color: #d45959;
+    color: #FB4F4F;
     font-weight: bold;
 }
 
