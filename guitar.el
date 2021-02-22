@@ -18,24 +18,22 @@ Otherwise, delegate to normal html block code. "
         ("small" (let ((code (org-element-property :value src-block)))
                    (with-temp-buffer
                      (save-excursion
-                       (insert "<center>")
-                       (insert "<div style=\"width:300px\">")
+                       (insert "<div class=\"diagram-container\">")
+                       (insert "<div class=\"diagram\">")
                        (cl-loop for diagram in (read (format "(%s)" code)) do
                                 (insert (org-babel-execute:lisp (format "%S" diagram) '((:result-params "output")))))
                        (insert "</div>")
-                       (insert "</center>")
+                       (insert "</div>")
                        (buffer-string)))))
         ("row" (let ((code (org-element-property :value src-block)))
                  (with-temp-buffer
                    (save-excursion
-                     (insert "<table style=\"width:100%\">")
-                     (insert "<tr>")
+                     (insert "<div class=\"diagram-container\">")
                      (cl-loop for diagram in (read (format "(%s)" code)) do
-                              (insert "<td>")
+                              (insert "<div class=\"diagram\">")
                               (insert (org-babel-execute:lisp (format "%S" diagram) '((:result-params "output"))))
-                              (insert "</td>"))
-                     (insert "</tr>")
-                     (insert "</table>")
+                              (insert "</div>"))
+                     (insert "</div>")
                      (buffer-string)))))
         (otherwise (org-export-with-backend 'html src-block contents info)))))
 
@@ -47,6 +45,10 @@ Otherwise, delegate to normal html block code. "
   (save-window-excursion
     (with-current-buffer (find-file "~/dev/guitar-improv/guitar.org")
       (guitar---export))))
+
+(defun guitar-toggle-export-on-save ()
+  (interactive)
+  (c/toggle-org-export-on-save 'guitar-doc-export))
 
 ;; Mostly a copy of org-html-export-to-html
 (defun guitar---export

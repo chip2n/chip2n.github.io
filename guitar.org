@@ -48,7 +48,7 @@ we want to play the _root note_ at the bottom of the chord (this is not
 * Arpeggios
 An _arpeggio_ is a chord played sequentially in an ascending/descending
 order. These are very useful when improvising, because they contain
-notes that are consonant with the chord they're played over. 
+notes that are consonant with the chord they're played over.
 
 #+attr_guitar: :container row
 #+begin_src lisp
