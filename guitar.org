@@ -52,7 +52,7 @@ notes that are consonant with the chord they're played over.
 
 #+attr_guitar: :container row
 #+begin_src lisp
-(guitar:diagram (:title "A minor arpeggio" :frets 5 :start 4 :indicator 5)
+(guitar:diagram (:title "A minor arpeggio" :frets 6 :start 4 :indicator 5)
         (6 5 "R" (:filled :highlight))
         (6 8 "b3")
         (5 7 "5")
@@ -61,7 +61,7 @@ notes that are consonant with the chord they're played over.
         (2 5 "5")
         (1 5 "R" (:filled :highlight)))
 
-(guitar:diagram (:title "D minor arpeggio" :frets 5 :start 4 :indicator 5)
+(guitar:diagram (:title "D minor arpeggio" :frets 6 :start 4 :indicator 5)
   (6 5 "5")
   (5 5 "R" (:filled :highlight))
   (5 8 "b3")
@@ -70,7 +70,7 @@ notes that are consonant with the chord they're played over.
   (2 6 "b3")
   (1 5 "5"))
 
-(guitar:diagram (:title "E major arpeggio" :frets 5 :start 4 :indicator 5)
+(guitar:diagram (:title "E major arpeggio" :frets 6 :start 4 :indicator 5)
   (6 4 "3")
   (6 7 "5")
   (5 7 "R" (:filled :highlight))
@@ -98,7 +98,7 @@ chord.
 
 #+attr_guitar: :container small
 #+begin_src lisp
-(guitar:diagram (:title "A minor pentatonic" :frets 4 :start 5 :indicator 5)
+(guitar:diagram (:title "A minor pentatonic" :frets 6 :start 4 :indicator 5)
   (6 5 "R" (:filled :highlight))
   (6 8 "b3")
   (5 5 "4")
@@ -122,7 +122,7 @@ Let's add another layer of notes to the pentatonic scale.
 
 #+attr_guitar: :container small
 #+begin_src lisp
-(guitar:diagram (:title "A natural minor" :frets 5 :start 4 :indicator 5)
+(guitar:diagram (:title "A natural minor" :frets 6 :start 4 :indicator 5)
   (6 5 "R" (:filled :highlight))
   (6 7 "2" (:stroked :new))
   (6 8 "b3")
@@ -157,7 +157,7 @@ reference.
 
 #+attr_guitar: :container row
 #+begin_src lisp
-(guitar:diagram (:title "A minor triad" :frets 5 :start 4 :indicator 5)
+(guitar:diagram (:title "A minor triad" :frets 6 :start 4 :indicator 5)
   (6 5 "" (:stroked :ref))
   (6 7 "" (:stroked :ref))
   (6 8 "" (:stroked :ref))
@@ -176,7 +176,7 @@ reference.
   (1 7 "" (:stroked :ref))
   (1 8 "" (:stroked :ref)))
 
-(guitar:diagram (:title "D minor triad" :frets 5 :start 4 :indicator 5)
+(guitar:diagram (:title "D minor triad" :frets 6 :start 4 :indicator 5)
   (6 5 "" (:stroked :ref))
   (6 7 "" (:stroked :ref))
   (6 8 "" (:stroked :ref))
@@ -195,7 +195,7 @@ reference.
   (1 7 "" (:stroked :ref))
   (1 8 "" (:stroked :ref)))
 
-(guitar:diagram (:title "E major triad" :frets 5 :start 4 :indicator 5)
+(guitar:diagram (:title "E major triad" :frets 6 :start 4 :indicator 5)
   (6 5 "" (:stroked :ref))
   (6 7 "" (:stroked :ref))
   (6 8 "" (:stroked :ref))
